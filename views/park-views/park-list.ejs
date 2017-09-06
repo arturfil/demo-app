@@ -1,0 +1,24 @@
+<section class="titles">
+
+  <h2> Parks in Miami Urban Area </h2>
+
+  <ul>
+    <% listOfParks.forEach((onePark) => { %>
+      <li>
+        <h3> <%= onePark.name %> </h3>
+        <p> <%= onePark.address %> </p>
+        <img src="<%= onePark.imageUrl %>">
+      </li>
+      <a href="/parks/new">Submit New Park</a>
+      <br>
+      <a href="/parks/<%= onePark._id %>/edit ">Edit Park</a>
+      <br>
+      <a href="/parks/<%= onePark._id %>">Details</a>
+      <br>
+      <br>
+      <form class="" action="/parks/<%= onePark._id %>/delete" method="post">
+        <button>Delete</button>
+      </form>
+    <% }) %>
+    </ul>
+</section>

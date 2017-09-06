@@ -22,8 +22,8 @@ router.get('/services', (req, res, next) => {
 //   res.render('your-profile.ejs');
 // })
 
-router.get('/login', (req, res, next) => {
-  res.render('login');
-})
+// router.get('/login', (req, res, next) => {
+//   res.render('login');
+// })
 
 module.exports = router;

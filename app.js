@@ -33,6 +33,12 @@ app.use('/', index);
 const myUserRouter = require('./routes/user-router.js')
 app.use(myUserRouter);
 
+const myAuthRouter = require('./routes/auth-router.js');
+app.use(myAuthRouter);
+
+const myParkRouter = require('./routes/park-router.js');
+app.use(myParkRouter);
+
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   const err = new Error('Not Found');

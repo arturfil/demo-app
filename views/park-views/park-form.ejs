@@ -1,0 +1,41 @@
+<section class="your-goals">
+
+  <h3>Submit New park</h3>
+
+  <% if (typeof errorMessages !== 'undefined') { %>
+  <ul class='error'>
+    <% for (let fieldName in errorMessages) { %>
+      <li> <%= errorMessages[fieldName].message %> </li>
+    <% } %>
+  </ul>
+<% } %>
+
+
+<div class="container">
+  <div class="form-goals">
+
+    <form class="" action="/parks" method="post">
+
+      <label for="name-input">Name</label>
+      <br>
+      <input id="name-input" type="text" name="parkName" value="" placeholder="Miami Beach Park">
+      <br>
+
+      <label for="address-input">Address</label>
+      <br>
+      <input id="address-input" type="text" name="parkAddress" value="" placeholder="5550 NW 98th St, Miami FL, 33454">
+      <br>
+
+      <label for="image'-input">Image of the Place</label>
+      <br>
+      <input id="image-input" type="text" name="parkImage" value="" placeholder="http://imageofthepark.jpg">
+      <br>
+
+      <button>Submit</button>
+
+    </form>
+
+  </div>
+</div>
+
+</section>
