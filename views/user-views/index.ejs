@@ -1,0 +1,24 @@
+<h2> User Stats </h2>
+
+<ul>
+  <% listOfUsers.forEach((oneUser) => { %>
+    <li>
+      <h3> <%= oneUser.name %> </h3>
+      <p> <%= oneUser.weight %> </p>
+      <p> <%= oneUser.age %> </p>
+      <p> <%= oneUser.gender %> </p>
+      <p> <%= oneUser.activityLevel %> </p>
+      <p> <%= oneUser.goal %> </p>
+      <br>
+      <a href="/users/<%= oneUser._id%>">Details</a>
+      <br>
+      <a href="/users/<%= oneUser._id%>/edit">Edit</a>
+
+    </li>
+    <br>
+    <form class="" action="/users/<%= oneUser._id %>/delete" method="post">
+      <button>Delete</button>
+    </form>
+
+  <% }) %>
+</ul>

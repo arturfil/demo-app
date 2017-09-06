@@ -1,0 +1,47 @@
+<section class="your-goals">
+
+  <h3>Enter Your Stats</h3>
+
+<div class="container">
+  <div class="form-goals">
+
+    <form class="" action="/users/<%= userInfo._id%>" method="post">
+
+      <label for="full-name-input">Fullname</label>
+      <br>
+      <input id="full-name-input" type="text" name="userName" value="<%= userInfo.name %>" placeholder="Pepe Soplar">
+      <br>
+
+      <label for="weight-input">Weight</label>
+      <br>
+      <input id="weight-input" type="number" name="userWeight" value="<%= userInfo.weight %>" placeholder="150 lbs">
+      <br>
+
+      <label for="age-input">Age</label>
+      <br>
+      <input id="age-input" type="number" name="userAge" value="<%= userInfo.age %>" placeholder=" 35">
+      <br>
+
+      <label for="gender-input">Gender</label>
+      <br>
+      <input id="gender-input" type="text" name="userGender" value="<%= userInfo.gender %>" placeholder="Male/Female">
+      <br>
+
+      <label for="activity-level-input">Activity Level</label>
+      <br>
+      <input id="activity-level-input" type="text" name="userActivityLevel" value="<%= userInfo.activityLevel %>" placeholder="Medium">
+      <br>
+
+      <label for="goal-input">Goal</label>
+      <br>
+      <input id="goal-input" type="text" name="userGoal" value="<%= userInfo.goal %>" placeholder="Increase Mass">
+      <br>
+
+      <button>Submit</button>
+
+    </form>
+
+  </div>
+</div>
+
+</section>

@@ -1,0 +1,16 @@
+<section class="titles">
+
+<h2>Your Profile</h2>
+
+<ul>
+  <% userInfo.forEach((personalInfo) => { %>
+    <h3><%= personalInfo.name %></h3>
+    <h3><%= personalInfo.weight %></h3>
+    <h3><%= personalInfo.age %></h3>
+    <h3><%= personalInfo.gender %></h3>
+    <h3><%= personalInfo.activityLevel %></h3>
+    <h3><%= personalInfo.goal %></h3>
+  <% }) %>
+</ul>
+
+</section>
